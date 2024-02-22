@@ -14,6 +14,8 @@ public record CreatePulseCheckRecord(
     @NotNull
     LocalDate measurement_date,
     @NotNull
+    String measurement_description_date,
+    @NotNull
     LocalTime measurement_time,
     @NotBlank
     String user_id

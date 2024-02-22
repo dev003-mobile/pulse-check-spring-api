@@ -19,6 +19,7 @@ public class PulseCheckEntity {
   public PulseCheckEntity(PulseCheckRecord data) {
     this.unit = data.unit();
     this.measurement_date = data.measurement_date();
+    this.measurement_description_date = data.measurement_description_date();
     this.measurement_time = data.measurement_time();
     this.measurement_value = data.measurement_value();
     this.user_id = data.user_id();
@@ -30,6 +31,7 @@ public class PulseCheckEntity {
   private String unit;
   private int measurement_value;
   private LocalDate measurement_date;
+  private String measurement_description_date;
   private LocalTime measurement_time;
   private String user_id;
 }
